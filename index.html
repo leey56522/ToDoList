@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <script src="https://kit.fontawesome.com/544d17f051.js" crossorigin="anonymous"></script>
+    <title>To Do List</title>
+</head>
+<body>
+    
+    <header><i class="fas fa-check-double"></i>To Do List</header>
+
+    <main class="main">
+        <nav>
+            <!-- Default Project -->
+            <div class="default-project">
+                <button class="btn-default-project" data-tab = "1"><i class="fas fa-inbox"></i>Inbox</button>
+                <button class="btn-default-project" data-tab = "2"><i class="far fa-clock"></i>Today</button>
+                <button class="btn-default-project" data-tab = "3"><i class="far fa-calendar-alt"></i>This Week</button>
+            </div>
+            <!-- User Project -->
+            <div class="user-projects">
+                <h1>Projects</h1>
+                <ul class="addedprojects">
+                    <!-- Dummy task -->
+                    <!-- <li class="project-items" data-key="98765">
+                        Project 1
+                        <button class="delete-btn">X</button>
+                    </li>-->
+                </ul> 
+                <button class="btn-add-project">
+                    <i class="fa fa-plus"></i>
+                    Add Project
+                </button>
+                <div class="add-project-popup">
+                    <input class="input-add-project-popup" id="input-add-project-popup" type="text" placeholder="Project Name"/>
+                    <div class="add-project-popup-btns">
+                        <button class="add-project-popup-btn">Add</button>
+                        <button class="cancel-project-popup">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="project-preview">
+            <div class="default-content" data-tab = "1">
+                <h1>Inbox</h1>
+                <ul class="addedtasks">
+                    <!-- Dummy task -->
+                    <!-- <li class="task-items" data-key="123456">
+                        <div>
+                            <input type="checkbox" class="checkbox">
+                            Go to Gym
+                        </div>
+                        <button class="delete-btn">X</button>
+                    </li> -->
+                </ul>
+                <button class="btn-add-task">
+                    <i class="fa fa-plus"></i>
+                    Add Task
+                </button>
+                <div class="add-task-popup">
+                    <input class="input-add-task" id="input-add-task" type="text" placeholder="Task Name"/>
+                    <div class="add-task-btns">
+                        <button class="btn-add-task add-task">Add</button>
+                        <button class="btn-add-task cancel-task">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="default-content" data-tab = "2">
+                <h1>Today</h1>
+            </div>
+            <div class="default-content" data-tab = "3">
+                <h1>This Week</h1>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2021 Lucia Lee</p>
+        <a href="https://github.com/leey56522"><i class="fa fa-github"></i></a>
+    </footer>
+
+    <script src="main.js">
+    </script>
+</body>
+</html>
